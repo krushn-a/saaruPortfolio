@@ -7,12 +7,13 @@ import Link from "next/link";
 import { FiArrowLeft, FiExternalLink } from "react-icons/fi";
 import { notFound } from "next/navigation";
 
-export default function ProjectDetailPage({
+export default async function ProjectDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const project = projects.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
@@ -81,11 +82,11 @@ export default function ProjectDetailPage({
           className="mb-16"
         >
           <div className="aspect-video rounded-xl overflow-hidden bg-black border border-blue-500/30">
-            {project.videoUrl.includes('youtube.com') || project.videoUrl.includes('youtu.be') ? (
+            {project.videoUrl.includes('youtube.com') || project.videoUrl.includes('youtu.be') || project.videoUrl.includes('youtube-nocookie.com') ? (
               <iframe
                 width="100%"
                 height="100%"
-                src={`${project.videoUrl}?autoplay=1&loop=1&mute=1`}
+                src={project.videoUrl}
                 title={project.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
