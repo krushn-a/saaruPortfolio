@@ -149,7 +149,7 @@ export const projects = [
       "Engineered a real-time interactive system with object detection, collision handling, and destruction logic.",
     image: "/images/projects/HungryRabbit.png",
     liveUrl: "https://nicheabyss.itch.io/hungry-rabbit",
-    videoUrl: "/videos/project/HungryRabbit.mp4", // Add your YouTube embed URL here
+    videoUrl: "https://www.youtube.com/embed/SFmlMr5DylY?autoplay=1&mute=1&loop=1&playlist=SFmlMr5DylY",
     introduction:
       "Hungry Rabbit is a fast-paced arcade game that tests player reflexes and timing. This project focuses on real-time systems and smooth gameplay mechanics.",
     about:
@@ -179,7 +179,7 @@ export const projects = [
       "Built a resource management system with gameplay loop, emphasizing feature prototyping and iterative testing.",
     image: "/images/projects/KitchenChaos.png",
     liveUrl: "https://nicheabyss.itch.io/hells-kitchen",
-    videoUrl: "/videos/project/KitchenChaos.mp4", // Add your YouTube embed URL here
+    videoUrl: "https://www.youtube.com/embed/WZ5-cg-O6AY?autoplay=1&mute=1&loop=1&playlist=WZ5-cg-O6AY",
     introduction:
       "Hells Kitchen is a resource management game that challenges players to balance multiple tasks and make strategic decisions under pressure.",
     about:
@@ -209,7 +209,7 @@ export const projects = [
       "Designed player navigation system with collider-based obstacle detection and interactive mechanics.",
     image: "/images/projects/crumbs-in-the-dark.png",
     liveUrl: "https://nicheabyss.itch.io/crumbs-in-the-dark",
-    videoUrl: "/videos/project/CrumbsInTheDark.mp4",
+    videoUrl: "https://www.youtube.com/embed/Sw0rg1s2XPM?autoplay=1&mute=1&loop=1&playlist=Sw0rg1s2XPM",
     introduction:
       "Midnight Crumbs is an exploratory game focusing on player navigation and interactive environmental mechanics.",
     about:
