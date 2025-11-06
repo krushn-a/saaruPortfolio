@@ -1,59 +1,44 @@
-import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { FiCpu, FiHeadphones, FiMonitor } from "react-icons/fi";
+import { FaGitAlt, FaCube } from "react-icons/fa";
+import { FiCpu, FiHeadphones, FiMonitor, FiCode } from "react-icons/fi";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import {
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiGraphql,
-  SiPostgresql,
-  SiSanity,
-  SiStrapi,
-  SiNestjs,
-  SiCloudflare,
-  SiRedux,
-  SiSupabase,
-  SiRemix,
-  SiSass,
-  SiBootstrap,
-  SiContentful,
+  SiUnity,
+  SiCplusplus,
+  SiBlender,
+  SiGithub,
+  SiGodotengine,
 } from "react-icons/si";
+import { TbBrandCSharp, TbBrandVisualStudio } from "react-icons/tb";
 
 export const socialLinks = [
   {
     id: 5,
     priority: 1,
     title: "GitHub",
-    url: "https://github.com/Abhishek1350",
+    url: "https://github.com/krushn-a",
   },
   {
     id: 6,
     priority: 2,
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/abhishek-bhardwaj-76b9a721b/",
+    url: "https://www.linkedin.com/in/krushn-a-07604b258/",
   },
   {
     id: 7,
     priority: 3,
-    title: "Twitter",
-    url: "https://twitter.com/Abhishek1350",
-  },
-  {
-    id: 8,
-    priority: 4,
-    title: "Instagram",
-    url: "https://www.instagram.com/imabhishek.dev/",
+    title: "itch.io",
+    url: "https://nicheabyss.itch.io/",
   },
 ];
 
 export const personalInfo = {
-  name: "Abhishek Bhardwaj",
-  title: "Software Developer | React, Next.js, Nest.js",
-  avatar: "/images/about/abhishek-bhardwaj.webp",
-  email: "hello@imabhishek.site",
-  location: "Himachal Pradesh, India",
+  name: "Krushna Prasad Marndi",
+  title: "Gameplay Programmer",
+  avatar: "/images/about/krushna.jpg",
+  email: "codeofkrushna@gmail.com",
+  location: "Jabalpur, Madhya Pradesh, India",
   description:
-    "Self-taught Software Developer from Himachal Pradesh, India, crafting scalable and high-performance websites and applications. Skilled in React, Next.js, and NestJS, I started my journey during the lockdown and worked my way from complete beginner to building custom software solutions from scratch.",
+    "Game programmer specializing in systems and gameplay programming, focused on writing efficient, clean code and tackling new challenges in game development",
 };
 
 export const heroSection = {
@@ -63,175 +48,188 @@ export const heroSection = {
 
 export const workExperience = [
   {
-    company: "FAB Web Studio",
-    position: "ReactJS Developer",
-    period: "Jan 2024 - Present",
+    company: "Jagrati",
+    position: "Volunteer Member",
+    period: "2022 - 2025",
     shortDesc:
-      "Started as a ReactJS developer and gradually expanded into full-stack responsibilities, including backend development and AI integration. Working both independently and within teams to deliver scalable web applications. My full responsibilities include:",
+      "Volunteered as part of a student-led initiative to foster education in nearby villages, making a meaningful impact on the lives of underprivileged children. My contributions included:",
     bulletPoints: [
-      "Gathering client requirements and delivering tailored frontend and backend solutions",
-      "Building and deploying custom Shopify apps using the Remix framework",
-      "Building dynamic frontends with React and Next.js",
-      "Integrating headless CMS platforms such as Strapi, Sanity, Drupal, and WordPress",
-      "Implementing backend systems using Node.js and NestJS with PostgreSQL",
-      "Integrating AI tools into internal projects to enhance automation and workflows",
-      "Managing deployments on VPS and optimizing performance with Cloudflare and GraphQL",
-    ],
-  },
-  {
-    company: "Edvolve",
-    position: "Software Engineer",
-    period: "Aug 2022 - Jan 2024",
-    shortDesc:
-      "Joined as an intern and quickly transitioned into a full-time Software Engineer role. Worked closely with the founding team to build and launch key products from the ground up. My full responsibilities included:",
-    bulletPoints: [
-      "Built and launched two full-scale web applications using React",
-      "Worked directly with the founders to define product roadmap and strategy",
-      "Led frontend development and collaborated across teams in an agile environment",
-      "Contributed to funding pitches by preparing live product demos and prototypes",
+      "Taught 65+ underprivileged children, focusing on building curiosity and foundational knowledge",
+      "Developed teamwork, leadership, and communication skills through collaborative teaching sessions",
+      "Mentored students to help them discover their potential and develop a love for learning",
+      "Organized and participated in educational activities to create an engaging learning environment",
     ],
   },
 ];
 
 export const techStack = [
-  // === FRONTEND ===
-  { name: "Next.js", icon: SiNextdotjs, color: "text-white", type: "Frontend" },
-  { name: "React", icon: FaReact, color: "text-blue-400", type: "Frontend" },
-  { name: "Remix", icon: SiRemix, color: "text-indigo-500", type: "Frontend" },
+  // === LANGUAGES ===
+  { name: "C++", icon: SiCplusplus, color: "text-blue-500", type: "Languages" },
+  { name: "C#", icon: TbBrandCSharp, color: "text-purple-600", type: "Languages" },
+
+  // === GAME ENGINE & 3D ===
   {
-    name: "Redux",
-    icon: SiRedux,
-    color: "text-purple-700",
-    type: "Frontend",
+    name: "Unity Engine",
+    icon: SiUnity,
+    color: "text-gray-200",
+    type: "Game Engine & 3D",
+  },
+  {
+    name: "Blender",
+    icon: SiBlender,
+    color: "text-orange-500",
+    type: "Game Engine & 3D",
   },
 
-  {
-    name: "TypeScript",
-    icon: SiTypescript,
-    color: "text-blue-500",
-    type: "Frontend",
-  },
-  {
-    name: "Tailwind",
-    icon: SiTailwindcss,
-    color: "text-cyan-400",
-    type: "Frontend",
-  },
-  {
-    name: "Bootstrap",
-    icon: SiBootstrap,
-    color: "text-purple-600",
-    type: "Frontend",
-  },
-  { name: "SCSS", icon: SiSass, color: "text-pink-600", type: "Frontend" },
-
-  // === BACKEND & DATABASES ===
-  {
-    name: "Node.js",
-    icon: FaNodeJs,
-    color: "text-green-500",
-    type: "Backend & Databases",
-  },
-  {
-    name: "NestJS",
-    icon: SiNestjs,
-    color: "text-red-500",
-    type: "Backend & Databases",
-  },
-  {
-    name: "GraphQL",
-    icon: SiGraphql,
-    color: "text-pink-400",
-    type: "Backend & Databases",
-  },
-  {
-    name: "Supabase",
-    icon: SiSupabase,
-    color: "text-green-400",
-    type: "Backend & Databases",
-  },
-  {
-    name: "PostgreSQL",
-    icon: SiPostgresql,
-    color: "text-blue-400",
-    type: "Backend & Databases",
-  },
-
-  // === CMS ===
-  { name: "Sanity", icon: SiSanity, color: "text-red-500", type: "CMS" },
-  { name: "Strapi", icon: SiStrapi, color: "text-blue-700", type: "CMS" },
-  {
-    name: "Contentful",
-    icon: SiContentful,
-    color: "text-blue-500",
-    type: "CMS",
-  },
-
-  // === TOOLS & DEVOPS ===
+  // === TOOLS & PLATFORMS ===
   {
     name: "Git",
     icon: FaGitAlt,
     color: "text-orange-500",
-    type: "Tools & DevOps",
+    type: "Tools & Platforms",
   },
   {
-    name: "Cloudflare",
-    icon: SiCloudflare,
-    color: "text-orange-400",
-    type: "Tools & DevOps",
+    name: "GitHub",
+    icon: SiGithub,
+    color: "text-gray-200",
+    type: "Tools & Platforms",
+  },
+  {
+    name: "Visual Studio",
+    icon: TbBrandVisualStudio,
+    color: "text-purple-500",
+    type: "Tools & Platforms",
+  },
+
+  {
+    name: "Godot",
+    icon: SiGodotengine,
+    color: "text-blue-400",
+    type: "Tools & Platforms",
+  },
+
+  // === CONCEPTS ===
+  {
+    name: "OOP",
+    icon: FiCode,
+    color: "text-cyan-400",
+    type: "Concepts",
+  },
+  {
+    name: "Design Patterns",
+    icon: FiCode,
+    color: "text-green-400",
+    type: "Concepts",
+  },
+  {
+    name: "Collision Detection",
+    icon: FiCode,
+    color: "text-yellow-400",
+    type: "Concepts",
+  },
+  {
+    name: "UI System",
+    icon: FiCode,
+    color: "text-pink-400",
+    type: "Concepts",
+  },
+  {
+    name: "System Optimization",
+    icon: FiCode,
+    color: "text-red-400",
+    type: "Concepts",
   },
 ];
 
 export const projects = [
   {
-    title: "FAB Web Studio",
+    slug: "hungry-rabbit",
+    title: "Hungry Rabbit",
     description:
-      "Redesigned and rebuilt FAB Web Studio’s outdated Drupal website into a sleek, modern, and high-performance platform using Next.js, TypeScript, Strapi, and Tailwind CSS. I handled everything independently, from UI/UX design and frontend development to backend setup, CMS integration, and deployment. The site features a fully dynamic CMS, SEO-optimized architecture, blazing-fast performance, and an AI-powered chatbot that answers intelligently based on site content.",
-    image: "/images/projects/fabwebstudio.webp",
-    liveUrl: "https://fabwebstudio.com",
+      "Engineered a real-time interactive system with object detection, collision handling, and destruction logic.",
+    image: "/images/projects/HungryRabbit.png",
+    liveUrl: "https://nicheabyss.itch.io/hungry-rabbit",
+    videoUrl: "/videos/project/HungryRabbit.mp4", // Add your YouTube embed URL here
+    introduction:
+      "Hungry Rabbit is a fast-paced arcade game that tests player reflexes and timing. This project focuses on real-time systems and smooth gameplay mechanics.",
+    about:
+      "Engineered a real-time interactive system with object detection, collision handling, and destruction logic. Designed a scoring progression system, simulating product-like feedback loops for user engagement.",
+    projectInfo: {
+      duration: "2 months",
+      role: "Solo Developer",
+      teamSize: "1",
+      platform: "PC, WebGL",
+    },
+    whatILearned: [
+      "Implemented efficient collision detection systems",
+      "Developed real-time object spawning and destruction mechanics",
+      "Created engaging scoring and progression systems",
+      "Optimized performance for smooth gameplay",
+      "Enhanced understanding of game feel and player feedback",
+    ],
+    gallery: [],
     techStack: techStack.filter((item) =>
-      ["Next.js", "Strapi", "TypeScript", "Tailwind"].includes(item.name)
+      ["Unity Engine", "C#", "Collision Detection"].includes(item.name)
     ),
   },
   {
-    title: "SnapLoom",
+    slug: "hells-kitchen",
+    title: "Hells Kitchen",
     description:
-      "A free AI-powered image editor with tools for background removal, recoloring, aspect ratio resizing, and image generation.",
-    image: "/images/projects/snaploom.webp",
-    liveUrl: "https://www.snaploom.space",
+      "Built a resource management system with gameplay loop, emphasizing feature prototyping and iterative testing.",
+    image: "/images/projects/KitchenChaos.png",
+    liveUrl: "https://nicheabyss.itch.io/hells-kitchen",
+    videoUrl: "/videos/project/KitchenChaos.mp4", // Add your YouTube embed URL here
+    introduction:
+      "Hells Kitchen is a resource management game that challenges players to balance multiple tasks and make strategic decisions under pressure.",
+    about:
+      "Built a resource management system with gameplay loop, emphasizing feature prototyping and iterative testing. Designed levels and interactions, demonstrating user experience-oriented development.",
+    projectInfo: {
+      duration: "2.5 months",
+      role: "Solo Developer",
+      teamSize: "1",
+      platform: "PC, WebGL",
+    },
+    whatILearned: [
+      "Designed and implemented resource management systems",
+      "Created engaging gameplay loops with increasing difficulty",
+      "Developed rapid prototyping skills for feature testing",
+      "Enhanced level design and player progression",
+      "Improved user experience through iterative testing",
+    ],
+    gallery: [],
     techStack: techStack.filter((item) =>
-      ["Next.js", "TypeScript", "Tailwind"].includes(item.name)
+      ["Unity Engine", "C#", "OOP"].includes(item.name)
     ),
   },
   {
-    title: "Free Games Hub",
+    slug: "midnight-crumbs",
+    title: "Midnight Crumbs",
     description:
-      "A treasure trove of free PC games and browser-based delights. Discover thrilling titles ready for download and instant play.",
-    image: "/images/projects/free-games-hub.webp",
-    liveUrl: "https://www.freegameshub.xyz",
-    githubUrl: "https://github.com/Abhishek1350/FreeGamesHub",
+      "Designed player navigation system with collider-based obstacle detection and interactive mechanics.",
+    image: "/images/projects/crumbs-in-the-dark.png",
+    liveUrl: "https://nicheabyss.itch.io/crumbs-in-the-dark",
+    videoUrl: "/videos/project/CrumbsInTheDark.mp4",
+    introduction:
+      "Midnight Crumbs is an exploratory game focusing on player navigation and interactive environmental mechanics.",
+    about:
+      "Designed player navigation system with collider-based obstacle detection. Prototyped a cauldron mechanic spawning cookies when interacted with. Focused on expanding knowledge of Unity's trigger interaction system.",
+    projectInfo: {
+      duration: "1.5 months",
+      role: "Solo Developer",
+      teamSize: "1",
+      platform: "PC, WebGL",
+    },
+    whatILearned: [
+      "Mastered Unity's collider and trigger systems",
+      "Implemented player movement and navigation mechanics",
+      "Created interactive environmental objects",
+      "Developed spawning systems for dynamic gameplay",
+      "Enhanced understanding of physics-based interactions",
+    ],
+    gallery: [],
     techStack: techStack.filter((item) =>
-      ["Next.js", "TypeScript", "Tailwind"].includes(item.name)
-    ),
-  },
-  {
-    title: "CoinEcho",
-    description:
-      "Get AI insights and stay ahead in the fast-moving world of digital assets with real-time cryptocurrency updates and analysis.",
-    image: "/images/projects/coin-echo.webp",
-    liveUrl: "https://coinecho.pages.dev",
-    techStack: techStack.filter((item) =>
-      ["React", "TypeScript", "Supabase"].includes(item.name)
-    ),
-  },
-  {
-    title: "FreeAIHub",
-    description:
-      "Discover a diverse range of AI tools for Text-to-Image, Automatic Speech Recognition, and more, all available at no cost.",
-    image: "/images/projects/free-ai-hub.webp",
-    liveUrl: "https://www.freeaihub.cloud/",
-    techStack: techStack.filter((item) =>
-      ["Next.js", "TypeScript"].includes(item.name)
+      ["Unity Engine", "C#", "Collision Detection", "UI System"].includes(item.name)
     ),
   },
 ];

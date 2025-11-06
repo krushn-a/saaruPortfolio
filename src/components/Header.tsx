@@ -29,7 +29,7 @@ export function Header() {
     >
       <nav className="w-full flex items-center justify-between">
         <div className="text-white">
-          <Link href="/" className="flex gap-2 items-center">
+          {/* <Link href="/" className="flex gap-2 items-center">
             <Image
               src="/logo.webp"
               alt="imabhishek logo"
@@ -37,8 +37,8 @@ export function Header() {
               width={50}
               height={50}
             />
-            <span className="text-lg">imabhishek</span>
-          </Link>
+            <span className="text-lg"></span>
+          </Link> */}
         </div>
         <div className=" text-gray-400">{time}</div>
       </nav>

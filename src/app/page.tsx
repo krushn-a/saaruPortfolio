@@ -1,13 +1,10 @@
 import {
   CallToAction,
-  Certifications,
   FadeInUp,
   HeroSection,
-  MySetup,
   Projects,
   TechnicalSkills,
   WorkExperience,
-  Testimonials,
 } from "@/components";
 
 export default function Portfolio() {
@@ -17,28 +14,16 @@ export default function Portfolio() {
         <HeroSection />
       </FadeInUp>
 
-      <FadeInUp delay={0.6}>
-        <MySetup />
-      </FadeInUp>
-
-      <FadeInUp delay={0.4}>
-        <WorkExperience />
-      </FadeInUp>
+      <FadeInUp delay={0.5}>
+        <Projects />
+      </FadeInUp>      
 
       <FadeInUp delay={0.4}>
         <TechnicalSkills />
       </FadeInUp>
 
-      <FadeInUp delay={0.5}>
-        <Projects />
-      </FadeInUp>
-
-      <FadeInUp delay={0.8}>
-        <Certifications />
-      </FadeInUp>
-
-      <FadeInUp delay={1.0}>
-        <Testimonials />
+      <FadeInUp delay={0.4}>
+        <WorkExperience />
       </FadeInUp>
 
       <FadeInUp delay={1.4}>

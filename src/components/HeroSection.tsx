@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { FiCalendar, FiMapPin } from "react-icons/fi";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FiCalendar, FiMapPin, FiDownload } from "react-icons/fi";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaItchIo } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { heroSection } from "@/config/data";
 
@@ -18,6 +18,10 @@ function getSocialIcon(title: string) {
     case "Instagram":
       return (
         <FaInstagram className="w-8 h-8 text-pink-500 hover:text-pink-700" />
+      );
+    case "itch.io":
+      return (
+        <FaItchIo className="w-8 h-8 text-red-500 hover:text-red-700" />
       );
     default:
       return (
@@ -42,7 +46,7 @@ export function HeroSection() {
             className="object-cover"
           />
           <AvatarFallback className="text-3xl font-semibold bg-gray-800">
-            AB
+            KM
           </AvatarFallback>
         </Avatar>
 
@@ -99,13 +103,28 @@ export function HeroSection() {
               <span>Schedule a call</span>
             </a>
           </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.02, y: -1 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            <a
+              className="flex items-center border border-green-700/50 text-green-300 hover:bg-green-900/30 transition-all duration-300 py-2 px-4 rounded-sm"
+              href="/Resume/Krushna_GamedevResume.pdf"
+              download="Krushna_Marndi_Resume.pdf"
+            >
+              <FiDownload className="w-4 h-4 mr-2" />
+              <span>Download Resume</span>
+            </a>
+          </motion.div>
         </div>
 
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="text-4xl lg:text-6xl font-bold mb-3 tracking-tight"
+          className="text-4xl lg:text-5xl font-bold mb-3 tracking-tight"
         >
           {heroSection.personalInfo.name}
         </motion.h1>

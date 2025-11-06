@@ -6,7 +6,7 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 
-  --color-background: oklch(0.04 0 0);
+  --color-background: oklch(0.1408 0.0265 61.99);
   --color-foreground: oklch(0.98 0 0);
   --color-card: oklch(0.04 0 0);
   --color-card-foreground: oklch(0.98 0 0);
