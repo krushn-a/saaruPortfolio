@@ -143,12 +143,45 @@ export const techStack = [
 
 export const projects = [
   {
+    slug: "Kiwi-Rush",
+    title: "Kiwi Rush",
+    description:
+      "Engineered a real-time interactive system with object detection, collision handling, and destruction logic.",
+    image: "/images/projects/kiwiRush.png",
+    liveUrl: "https://nicheabyss.itch.io/kiwirush",
+    videoUrl: "https://www.youtube-nocookie.com/embed/pCFTwmAQ8MI?autoplay=1&mute=1&loop=1&playlist=pCFTwmAQ8MI",
+    introduction:
+      "Kiwi Rush is a challenging 2D platformer where precision meets peril. Navigate deadly traps, outsmart enemies, and collect kiwis to unlock new levels in this pixel art adventure. With physics-based controls and a progression system that rewards skillful play, every level presents a fresh challenge that tests your reflexes and strategic thinking. Built with Unity and C#, it combines engaging gameplay with solid technical implementation.",
+    about:
+      "Built a challenging 2D platformer with advanced mechanics including sticky platforms, waypoint-based movement systems, and state-driven animations. Engineered a progression framework with persistent data storage, real-time collectible tracking, and dynamic level unlocking based on player achievements.",
+    projectInfo: {
+      duration: "2 months",
+      role: "Solo Developer",
+      teamSize: "1",
+      platform: "PC, WebGL",
+    },
+    whatILearned: [
+      "Designed robust state machine architecture for animation management",
+      "Implemented collision detection and trigger-based gameplay mechanics",
+      "Developed data persistence systems for cross-session player progress",
+      "Created modular component-based systems for scalable game features",
+      "Optimized Rigidbody2D physics for precise platformer movement",
+      "Built UI integration with real-time gameplay data synchronization",
+      "Architected scene management and level transition systems",
+      "Applied C# best practices and Unity design patterns",
+    ],
+    gallery: [],
+    techStack: techStack.filter((item) =>
+      ["Unity Engine", "C#", "Collision Detection"].includes(item.name)
+    ),
+  },
+  {
     slug: "hungry-rabbit",
     title: "Hungry Rabbit",
     description:
       "Engineered a real-time interactive system with object detection, collision handling, and destruction logic.",
     image: "/images/projects/HungryRabbit.png",
-    liveUrl: "https://nicheabyss.itch.io/hungry-rabbit",
+    liveUrl: "https://nicheabyss.itch.io/hungryrabbit",
     videoUrl: "https://www.youtube-nocookie.com/embed/SFmlMr5DylY?autoplay=1&mute=1&loop=1&playlist=SFmlMr5DylY",
     introduction:
       "Hungry Rabbit is a fast-paced arcade game that tests player reflexes and timing. This project focuses on real-time systems and smooth gameplay mechanics.",
@@ -178,7 +211,7 @@ export const projects = [
     description:
       "Built a resource management system with gameplay loop, emphasizing feature prototyping and iterative testing.",
     image: "/images/projects/KitchenChaos.png",
-    liveUrl: "https://nicheabyss.itch.io/hells-kitchen",
+    liveUrl: "https://nicheabyss.itch.io/hellskitchen",
     videoUrl: "https://www.youtube-nocookie.com/embed/WZ5-cg-O6AY?autoplay=1&mute=1&loop=1&playlist=WZ5-cg-O6AY",
     introduction:
       "Hells Kitchen is a resource management game that challenges players to balance multiple tasks and make strategic decisions under pressure.",
